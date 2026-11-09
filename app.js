@@ -1,4 +1,5 @@
 const bikes = [
+ {id:'ninja400',brand:'Kawasaki',name:'Ninja 400',category:'Sport',cc:399,year:2023,km:5200,price:159000,image:'photo-1580310614729-ccd69652491d',description:'สปอร์ตแฟริ่งในตระกูล Ninja สำหรับคนที่ชอบเส้นสายโฉบเฉี่ยวและการขี่ที่คล่องตัว ข้อมูลปี ระยะทาง และราคาเป็นตัวอย่างสำหรับสาธิตเว็บไซต์'},
  {id:'z900',brand:'Kawasaki',name:'Z900',category:'Naked',cc:948,year:2023,km:8400,price:289000,image:'photo-1580310614729-ccd69652491d',description:'เส้นสายดุดันในสไตล์ซูเปอร์เน็กเก็ต เหมาะกับคนที่ชอบการขี่คล่องตัวและบุคลิกที่ชัดเจน'},
  {id:'cbr650r',brand:'Honda',name:'CBR650R',category:'Sport',cc:649,year:2023,km:6200,price:279000,image:'photo-1568772585407-9361f9bf3a87',description:'สปอร์ตแฟริ่งเต็มคันที่ผสานความคล่องตัวกับรูปทรงโฉบเฉี่ยว สำหรับทุกวันและเส้นทางวันหยุด'},
  {id:'mt09',brand:'Yamaha',name:'MT-09',category:'Naked',cc:890,year:2022,km:11500,price:329000,image:'photo-1558981403-c5f9899a28bc',description:'ดีไซน์เน็กเก็ตในเมือง สำหรับคนที่ชอบตำแหน่งขี่สบายและคาแรกเตอร์ที่เป็นตัวเอง'},
