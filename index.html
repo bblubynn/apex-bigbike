@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>APEX BIGBIKE — คันที่ใช่ ทางที่เป็นคุณ</title>
+  <meta name="description" content="ค้นหาบิ๊กไบค์ในสไตล์ของคุณ เปรียบเทียบรุ่น บันทึกรถที่ชอบ และประเมินงบประมาณกับ APEX BIGBIKE">
+  <meta name="theme-color" content="#111311">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#inventory">ข้ามไปดูรถ</a>
+<div class="announcement">ทุกเส้นทาง เริ่มต้นด้วยรถที่ใช่ <span>FIND YOUR NEXT RIDE ↗</span></div>
+<header><a class="logo" href="#" aria-label="APEX BIGBIKE หน้าหลัก"><span class="logo-mark">A</span><span>APEX<small>BIGBIKE</small></span></a><nav aria-label="เมนูหลัก"><a href="#inventory">รถทั้งหมด</a><a href="#experience">ทำไมต้อง APEX</a><a href="#finance">วางแผนงบประมาณ</a></nav><button class="saved-nav" id="saved-nav">♡ <span>รายการโปรด</span> <b id="saved-count">0</b></button><a class="header-cta" href="#inventory">ค้นหารถของคุณ ↗</a></header>
+<main>
+<section class="hero">
+  <img class="hero-image" src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=2200&q=85" alt="มอเตอร์ไซค์บิ๊กไบค์บนถนน" fetchpriority="high">
+  <div class="hero-shade"></div><div class="hero-content"><div class="eyebrow"><span></span> FOR THE LOVE OF THE RIDE</div><h1>ชีวิตมีหลายเส้นทาง<br>เลือกคันที่<span>เป็นคุณ.</span></h1><p>ให้ทุกการเดินทาง มีความหมายมากกว่าจุดหมาย<br>ค้นพบบิ๊กไบค์ที่เข้ากับจังหวะชีวิตของคุณ</p><a class="button orange" href="#inventory">สำรวจรถทั้งหมด <span>↗</span></a><div class="hero-foot"><span>SPORT</span><i></i><span>NAKED</span><i></i><span>ADVENTURE</span><i></i><span>CLASSIC</span></div></div><div class="hero-number">01 <span>/ THE OPEN ROAD</span></div>
+</section>
+<div class="brand-strip" aria-label="แบรนด์ในแค็ตตาล็อก"><span>EXPLORE THE ICONS</span><b>Kawasaki</b><b>HONDA</b><b>YAMAHA</b><b class="ducati">DUCATI</b><b>BMW <small>MOTORRAD</small></b><b>TRIUMPH</b></div>
+<section class="inventory section" id="inventory">
+ <div class="section-head"><div><div class="eyebrow dark">THE GARAGE</div><h2>คันต่อไปของคุณ <span>อยู่ที่นี่.</span></h2></div><p>เลือกสไตล์ที่ชอบ แล้วออกไปสร้างเรื่องราวของคุณ</p></div>
+ <div class="demo-note"><span>แค็ตตาล็อกตัวอย่าง</span> รุ่นรถ ราคา ปี และภาพประกอบใช้เพื่อสาธิตเว็บไซต์ ไม่ใช่ประกาศขายหรือสต็อกจริง</div>
+ <div class="filters"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ค้นหาแบรนด์ หรือรุ่นรถ..." aria-label="ค้นหาแบรนด์หรือรุ่นรถ"></label><label><span class="sr-only">แบรนด์</span><select id="brand"><option value="all">ทุกแบรนด์</option>Kawasaki</option><option>Honda</option><option>Yamaha</option><option>Ducati</option><option>BMW</option><option>Triumph</option></select></label><label><span class="sr-only">งบประมาณ</span><select id="budget"><option value="all">ทุกงบประมาณ</option><option value="300000">ไม่เกิน 300,000 บาท</option><option value="500000">ไม่เกิน 500,000 บาท</option><option value="800000">ไม่เกิน 800,000 บาท</option></select></label></div>
+ <div class="catalog-bar"><div class="tabs" role="group" aria-label="ประเภทรถ"><button class="active" data-category="all">ทั้งหมด</button><button data-category="Sport">Sport</button><button data-category="Naked">Naked</button><button data-category="Adventure">Adventure</button><button data-category="Classic">Classic</button></div><label class="sort"><span class="sr-only">เรียงลำดับ</span><select id="sort"><option value="featured">แนะนำสำหรับคุณ</option><option value="price-asc">ราคา: ต่ำไปสูง</option><option value="price-desc">ราคา: สูงไปต่ำ</option></select></label></div>
+ <div class="results-line"><span id="results" aria-live="polite"></span><button id="reset">ล้างตัวกรอง</button></div><div class="bike-grid" id="bike-grid"></div>
+</section>
+<section class="experience" id="experience"><div class="experience-image"><img loading="lazy" src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1100&q=85" alt="บิ๊กไบค์กับอิสระในการเดินทาง"><span>IT’S MORE THAN<br><b>A MACHINE.</b></span></div><div class="experience-copy"><div class="eyebrow">BUILT AROUND YOUR PASSION</div><h2>เราเข้าใจว่า<br>มันไม่ใช่แค่<span>รถคันหนึ่ง.</span></h2><p>บางคนมองหาความเร็ว บางคนมองหาเส้นทางใหม่<br>เราอยากช่วยให้คุณเจอรถที่ตอบโจทย์ของตัวเอง</p><div class="benefit"><b>01</b><div><h3>เลือกจากสไตล์การขี่</h3><p>จากการเดินทางทุกวัน ไปจนถึงทริปสุดสัปดาห์</p></div></div><div class="benefit"><b>02</b><div><h3>เปรียบเทียบได้ในที่เดียว</h3><p>ดูรุ่นรถ ราคา และข้อมูลประกอบการตัดสินใจ</p></div></div><div class="benefit"><b>03</b><div><h3>วางแผนก่อนออกเดินทาง</h3><p>บันทึกคันที่ชอบ และลองประเมินงบประมาณ</p></div></div></div></section>
+<section class="finance section" id="finance"><div><div class="eyebrow dark">PLAN YOUR NEXT RIDE</div><h2>รถในฝัน.<br><span>เริ่มจากแผนที่ใช่</span></h2><p>ลองแบ่งงบซื้อรถเป็นรายเดือน เพื่อช่วยวางแผนการออม</p><p class="fine-print">เครื่องมือแบ่งงบออม ไม่มีดอกเบี้ยและไม่ใช่ข้อเสนอสินเชื่อ<br>ราคาตัวอย่างไม่รวมค่าใช้จ่ายในการครอบครองรถ</p></div><form id="finance-form" class="finance-card"><label for="price">งบซื้อรถ (บาท)</label><input id="price" type="number" min="10000" max="10000000" step="1000" value="350000" required><div class="form-row"><div><label for="deposit">เงินที่มีแล้ว (%)</label><select id="deposit"><option value="0">0%</option><option value="20" selected>20%</option><option value="30">30%</option><option value="50">50%</option></select></div><div><label for="months">ระยะเวลาออม</label><select id="months"><option value="12">12 เดือน</option><option value="24">24 เดือน</option><option value="36" selected>36 เดือน</option><option value="48">48 เดือน</option></select></div></div><div class="estimate"><span>ควรออมเพิ่มประมาณ</span><strong id="monthly" aria-live="polite"></strong><span>บาท / เดือน</span></div></form></section>
+<section class="closing"><div><span class="eyebrow">YOUR NEXT CHAPTER</span><h2>ถนนกำลังรอคุณอยู่.</h2></div><a class="button orange" href="#inventory">หาคันที่ใช่ของคุณ ↗</a></section>
+</main>
+<footer><a class="logo" href="#"><span class="logo-mark">A</span><span>APEX<small>BIGBIKE</small></span></a><p>FOR THE LOVE OF THE RIDE.</p><small>© <span id="year"></span> APEX BIGBIKE · เว็บไซต์แค็ตตาล็อกตัวอย่าง</small></footer>
+<dialog id="detail"><button class="close" aria-label="ปิดรายละเอียด">×</button><div id="detail-content"></div></dialog><div id="toast" role="status"></div>
+</body></html>
